@@ -1,0 +1,107 @@
+/* styles.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f6f7f9;
+    height: 100vh;
+  }
+  
+  .container {
+    display:flex;
+    height: 100vh; /* Ensures the sidebar takes full height */
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #101924;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: fix;
+  }
+  
+  .sidebar h1 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+  }
+  
+  .sidebar ul li {
+    margin: 15px 0;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .sidebar ul li:hover {
+    text-decoration: underline;
+  }
+  
+  main {
+    flex-grow: 1;
+    padding: 30px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  header h2 {
+    font-size: 24px;
+    color: #101924;
+  }
+  
+  .user-profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Increased size */
+    gap: 30px; /* Increased spacing between cards */
+    margin-top: 20px;
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 15px; /* Increased border radius for smoother look */
+    padding: 35px; /* Increased padding */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card h3 {
+    margin-bottom: 20px;
+    font-size: 22px; /* Larger font size */
+  }
+  
+  .card p {
+    margin: 12px 0;
+    font-size: 18px; /* Larger font size for text */
+  }
+  
+  .card.excellent {
+    border-left: 10px solid #28a745; /* Thicker border for status */
+  }
+  
+  .card.well {
+    border-left: 10px solid #17a2b8;
+  }
+  
+  .card.average {
+    border-left: 10px solid #ffc107;
+  }
+  
